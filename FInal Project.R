@@ -38,3 +38,4 @@ colnames(table16.4) <- c("order", "champion", "date", "days")
 table16.4 %>% filter(!str_detect(order, 'The'))
 
 
+
