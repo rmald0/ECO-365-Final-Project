@@ -106,8 +106,8 @@ modern_era_champs <- modern_era_data %>%
   arrange(desc(days)) %>%
   top_n(1)  
 print(modern_era_champs)
-#Roman Reigns has the longest WWE Title reign of the modern era at 735 days.
-#In the modern era, WWE introduced a new top title, the Universal Title.
+# Roman Reigns has the longest WWE Title reign of the modern era at 735 days.
+# In the modern era, WWE introduced a new top title, the Universal Title.
  url5 <- "https://www.wrestlingdata.com/index.php?befehl=titles&titel=4335"
  universal_champ_page <- read_html(url5)
  universal_champ_table <- html_table(universal_champ_page)
