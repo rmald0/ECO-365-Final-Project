@@ -1,6 +1,6 @@
 # Longest Reigning WWE Champions
 I scraped tables from Wrestlingdata.com to determine who the longest reigning WWE Champions of all time are.
-The lineage of the WWE title goes back to 1963. Back then the WWE was known as the World Wide Wrestling Federation, or the WWWF. They operated in the New York territory
+The lineage of the WWE title goes back to 1963. Back then the WWE was known as the World Wide Wrestling Federation, or the WWWF.
 I found that 5 out of the top 10 longest reigning WWE champions were from the WWWF days, with 4 out of 5 of them holding the belt for over 1,000 days!
 WWE history can be broken down into "eras". I determined who the longest reigning champion was for each era, up until today. 
 # Eras
