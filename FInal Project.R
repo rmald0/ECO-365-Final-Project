@@ -41,6 +41,7 @@ champions_data[[2]] <- table16.2 %>% filter(!str_detect(order, 'The'))
 champions_data[[3]] <- table16.3 %>% filter(!str_detect(order, 'The'))
 champions_data[[4]] <- table16.4 %>% filter(!str_detect(order, 'The'))
 combined_table <- do.call(rbind, champions_data)
+# view(combined_table)
 
 combined_table$days <- as.numeric(combined_table$days, na.rm = TRUE)
 sorted_table <- combined_table[order(combined_table$days, decreasing = TRUE), ]
@@ -66,17 +67,17 @@ era_champions <- filtered_data %>%
   group_by(era) %>%
   arrange(desc(days)) %>%
   top_n(1)  
-#view(era_champions)
+view(era_champions)
 print(era_champions)
 # Bruno Sammartino has the longest World Title reign in WWE history at 2,803 days.  
 # 5 out of the top 10 longest reigning WWE champions are from the WWWF era.
-# During this era, WWE was not national, instead it was the New York Territory.
+# During this era, WWE was not national, instead it was the WWWF in the New York Territory.
 
 # Let's look at the longest reigning champions of each era, excluding the WWWF era. 
 golden_era_data <- filtered_data[filtered_data$era == "Golden Era", ]
 golden_era_champs <- golden_era_data %>%
   arrange(desc(days)) %>%
-  top_n(1)  
+  top_n(1)
 print(golden_era_champs)
 # Hulk Hogan had the longest title reign of the golden era, at 1,474 days. 
 
