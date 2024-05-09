@@ -67,7 +67,8 @@ era_champions <- filtered_data %>%
   group_by(era) %>%
   arrange(desc(days)) %>%
   top_n(1)  
-view(era_champions)
+# This is the list of longest reigning WWE Champions, in descending order. 
+# view(era_champions)
 print(era_champions)
 # Bruno Sammartino has the longest World Title reign in WWE history at 2,803 days.  
 # 5 out of the top 10 longest reigning WWE champions are from the WWWF era.
